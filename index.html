@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid with git</title>
+    <style>
+    body{
+        width: 100%;
+        margin: auto;
+    }
+    #container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        margin: 50px;
+      
+    }
+    .card{
+        border-radius: 8px;
+        display: flex;
+        flex-flow: column nowrap;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+        box-shadow: 0px 4px 6px 1px rgba(0, 0, 0, 0.1);
+    }
+    .investor{
+        width: 100%;
+        border-top: #E4E6EA 8px solid;
+    }
+    .logo{
+        width: 50%;
+        margin: auto;
+        max-height: 48px;
+    }
+    h3{
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        padding: 2px;
+        color: rgb(10,1,3);
+        margin: 2px;
+    }
+    h6{
+        font-family: sans-serif;
+        font-weight: normal;
+        font-size: 16px;
+        padding: 2px;
+        margin: 0;
+        color: #544D4F;
+
+        
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 93%;
+        
+    }
+    @media screen and (min-width: 768px) and (max-width: 1024px){
+        #container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    @media screen and (min-width: 481px) and (max-width: 767px){
+        #container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    @media screen and (max-width: 480px){
+        #container{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+</style>
+</head>
+<body>
+    <div id="container">
+        <div class="card">
+            <img class="investor" src="https://i.ibb.co/gPFGffc/1-Vijay-Shekhar-Sharma-Paytm.png" alt="1-Vijay-Shekhar-Sharma-Paytm">
+            <h3>Vijay Shekhar Sharma</h3>
+            <h6>Founder & CEO</h6>
+            <img class="logo" src="https://i.ibb.co/XjjHFsL/paytm.png" alt="paytm.png">
+        </div>
+
+        <div class="card">
+            <img class="investor" src="https://i.ibb.co/z7fr47y/2-kunal-shah-founder.png" alt="2-kunal-shah-founder">
+            <h3>Kunal Shah</h3>
+            <h6>Founder</h6>
+            <img class="logo" src="https://i.ibb.co/CstmPD7/cred.png" alt="cred.png">
+        </div>
+        
+        <div class="card">
+            <img class="investor" src="https://i.ibb.co/mFXFdp1/amrish-rau-pine-labs.png" alt="Amit-Kumar-Agarwal-Nobroker">
+            <h3>Amrish Rau</h3>
+            <h6>CEO</h6>
+            <img class="logo" src="https://i.ibb.co/HpkzmZv/pine-labs.png" alt="pine-labs">
+        </div>
+        <div class="card">
+            <img class="investor" src="https://i.ibb.co/9VwBXD6/Sampad-swain-Instamojo.png" alt="Sampad-swain-Instamojo">
+            <h3>Sampad Swain</h3>
+            <h6>Co-Founder & CEO</h6>
+            <img class="logo" src="https://i.ibb.co/8Kk9nSW/instamojo.png" alt="instamojo">
+        </div>
+        <div class="card">
+            <img class="investor" src="https://i.ibb.co/1RzgLkt/Ankush-Sachdeva-Sharechat.png" alt="Ankush-Sachdeva-Sharechat">
+            <h3>Ankush Sachdeva</h3>
+            <h6>Co-Founder & CEO</h6>
+            <img  class="logo" src="https://i.ibb.co/GdKYsS7/sharechat.png" alt="sharechat">
+        </div>
+        <div class="card">
+            <img class="investor" src="https://i.ibb.co/BCdbkN1/bhanu-pratap-singh-sharechat.png" alt="bhanu-pratap-singh-sharechat">
+            <h3>Bhanu Pratap Singh</h3>
+            <h6>Co-Founder & CTO</h6>
+            <img class="logo" src="https://i.ibb.co/GdKYsS7/sharechat.png" alt="sharechat">
+        </div>
+        <div class="card">
+            <img class="investor" src="https://i.ibb.co/BjTVD6T/farid-ahsan-sharechat.png" alt="farid-ahsan-sharechat">
+            <h3>Farid Ahsan</h3>
+            <h6>Co-Founder & COO</h6>
+            <img class="logo" src="https://i.ibb.co/GdKYsS7/sharechat.png" alt="sharechat">
+        </div>
+        <div class="card">
+            <img class="investor" src="https://i.ibb.co/HzwNyT1/Amit-Kumar-Agarwal-Nobroker.png" alt="Amit-Kumar-Agarwal-Nobroker">
+            <h3>Amit Kumar Agarwal</h3>
+            <h6>Founder & CEO</h6>
+            <img class="logo" src="https://i.ibb.co/wMVBqPX/nobroker.png" alt="nobroker">
+        </div>
+        <div class="card">
+            <img class="investor" src="https://i.ibb.co/XkcBmNF/Akhil-Gupta-Nobroke.png" alt="Akhil-Gupta-Nobroke">
+            <h3>Akhil Gupta</h3>
+            <h6>Founder & CTO</h6>
+            <img class="logo" src="https://i.ibb.co/wMVBqPX/nobroker.png" alt="nobroker">
+        </div>
+        <div class="card">
+            <img class="investor" src="https://i.ibb.co/N9schkz/saurbh-garg-nobroker.png" alt="saurbh-garg-nobroker">
+            <h3>Saurabh Garg</h3>
+            <h6>Co-Founder & CBO</h6>
+            <img class="logo" src="https://i.ibb.co/wMVBqPX/nobroker.png" alt="nobroker">
+        </div>
+        <div class="card">
+            <img class="investor" src="https://i.ibb.co/3ysyDwb/Vipin-Pathak-Care24.png" alt="Vipin-Pathak-Care24">
+            <h3>Vipin Pathak</h3>
+            <h6>Co-Founder & CEO</h6>
+            <img class="logo" src="https://i.ibb.co/3Y9wcV9/care24.png" alt="care24">
+        </div>
+        <div class="card">
+            <img class="investor" src="https://i.ibb.co/MCPvXZ5/Ramakant-Sharma-livespac.png" alt="Ramakant-Sharma-livespac">
+            <h3>Ramakant Sharma</h3>
+            <h6>Founder</h6>
+            <img class="logo" src="https://i.ibb.co/7XD8dJH/livspace.png" alt="livspace">
+        </div>
+        <div class="card">
+            <img class="investor" src="https://i.ibb.co/mFNN37w/Mohit-Tandon-Delhivery.png" alt="Mohit-Tandon-Delhivery">
+            <h3>Mohit Tandon</h3>
+            <h6>Co-Founder</h6>
+            <img class="logo" src="https://i.ibb.co/mTykr2R/delhivery.png" alt="delhivery">
+        </div>
+        <div class="card">
+            <img class="investor" src="https://i.ibb.co/C5jbQqD/Abhishek-Goyal-tracxn.png" alt="Abhishek-Goyal-tracxn" >
+            <h3>Abhishek Goyal</h3>
+            <h6>Co-Founder</h6>
+            <img class="logo" src="https://i.ibb.co/ZHsYGTX/tracxn.png" alt="tracx">
+        </div>
+        <div class="card">
+            <img class="investor" src="https://i.ibb.co/JcpSFvs/Anurag-Jain-Kredx.png" alt="Anurag-Jain-Kredx">
+            <h3>Anurag Jain</h3>
+            <h6>Founder & Executive Director</h6>
+            <img class="logo" src="https://i.ibb.co/z4VYqTz/kredx.png" alt="kredx" >
+        </div>
+        <div class="card">
+            <img class="investor" src="https://i.ibb.co/Hxjtp7B/Harshvardhan-Lunia-Lendingkart.png" alt="Harshvardhan-Lunia-Lendingkart">
+            <h3>Harshvardhan Lunia</h3>
+            <h6>Co-Founder & CEO</h6>
+            <img class="logo" src="https://i.ibb.co/5W15XRV/lendingkart.png" alt="lendingkart">
+        </div>
+        <div class="card">
+            <img class="investor" src="https://i.ibb.co/p32qbq2/sunil-rao-amazon.png" alt="sunil-rao-amazon">
+            <h3>Sunil Rao</h3>
+            <h6>Country Head Strategy and Corporate</h6>
+            <img class="logo" src="https://i.ibb.co/D8Wj1kt/amazon.png" alt="amazon" >
+        </div>
+        <div class="card">
+            <img class="investor" src="https://i.ibb.co/HVjX5zF/Sharda-Balaji-Novojuris.png" alt="Sharda-Balaji-Novojuris">
+            <h3>Sharda Balaji</h3>
+            <h6>Founder</h6>
+            <img class="logo" src="https://i.ibb.co/1dWrhjb/novojuris.png" alt="novojuris">
+        </div>
+        <div class="card">
+            <img class="investor" src="https://i.ibb.co/XpP4G5x/Kulin-Shah-Onsurity.png" alt="Kulin-Shah-Onsurity">
+            <h3>Kulin Shah</h3>
+            <h6>Co-Founder</h6>
+            <img class="logo" src="https://i.ibb.co/DkzL9pz/onsurity.png" alt="onsurity">
+        </div>
+    </div>
+</body>
+</html>
